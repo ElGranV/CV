@@ -1,0 +1,10 @@
+:root{
+    --title-bg-color: rgb(55,55,65);
+    --left-panel-bg-color:rgb(225,216,207);
+    --blue-toucan:rgba(0, 173, 238, 0.5);
+  }
+
+@font-face {
+    font-family: Montserrat;
+    src: url(ressources/Montserrat.ttf);
+}

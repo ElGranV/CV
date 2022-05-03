@@ -1,7 +1,4 @@
-:root{
-  --title-bg-color: rgb(55,55,65);
-  --left-panel-bg-color:rgb(225,216,207);
-}
+
 html, body{
     display: flex;
     flex-direction: row;
