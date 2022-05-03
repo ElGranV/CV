@@ -1,0 +1,26 @@
+.card{
+    display: block;
+    margin:30px 10px;
+    flex-direction: column;
+    text-align: justify;
+    width: 90%;
+    box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 25%);
+  }
+  
+  .card-title{
+    background-color: var(--title-bg-color);
+    color: var(--left-panel-bg-color);
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .card-section-title{
+    font-weight: bold;
+    display: block;
+  
+  }
+  .card-section-subtitle{
+    font-style: italic;
+    display: block;
+  }
+

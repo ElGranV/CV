@@ -1,0 +1,75 @@
+:root{
+    --title-bg-color: rgb(55,55,65);
+    --left-panel-bg-color:rgb(225,216,207);
+    --blue-toucan:rgba(0, 173, 238, 0.5);
+  }
+
+  .asso-box{
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr 1fr;
+      
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+      
+  }
+
+.asso-card{
+    background: linear-gradient(90deg, var(--left-panel-bg-color) 0 5%, white);
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 25%);
+    margin: 10px;
+    width:95%;
+    border-radius: 5%;
+    padding: 3px;
+
+}
+.asso-card:hover{
+    box-shadow: 0 0.3em 0.5em rgb(0 0 0 / 32%);
+    background: linear-gradient(90deg, var(--blue-toucan) 0 5%, white);
+
+}
+
+.asso-card img{
+    width: 50%;
+    
+}
+.asso-card a{
+    display: block;
+    text-decoration: none;
+    color: skyblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.asso-name{
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    
+}
+.asso-name hr{
+    width: 70%;
+}
+
+
+.asso-desription{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-device-width:800px){
+    .asso-box{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .asso-card{
+        width: 88%;
+        align-self: center;
+    }
+}

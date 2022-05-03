@@ -1,0 +1,112 @@
+:root{
+  --title-bg-color: rgb(55,55,65);
+  --left-panel-bg-color:rgb(225,216,207);
+}
+html, body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0%;
+    height: 100%;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 10%, rgba(0,212,255,1) 100%);; */
+    /* background-color: #3498db; */
+    font-size: 2vh;
+    flex-basis: 100%;
+    
+}
+
+.left-panel{
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: var(--left-panel-bg-color);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  height:fit-content;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.image-profile{
+  flex-grow: 1;
+}
+.image-profile img{
+  border-radius: 50%;
+  width:230px;
+}
+
+.soft-skills{
+  flex-grow: 3;
+}
+
+
+.right-panel{
+  flex-grow: 3;
+  width:70%;
+  flex-shrink: 0;
+  height: fit-content;
+}
+
+.header{
+  flex-grow: 1;
+  background-color: var(--title-bg-color);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--left-panel-bg-color);
+  padding: 5%;
+  font-size: 28px;
+  text-align: center;
+}
+
+
+body .header:hover{
+  background: linear-gradient(70deg, darkblue, lightgreen);
+
+  /* transform: gradient; */
+}
+.header:hover ~ .content .card-title{
+  background: linear-gradient(70deg, darkblue, lightgreen);
+}
+.content.card-title:hover ~ .header{
+  background: linear-gradient(70deg, darkblue, lightgreen);
+
+}
+
+.content{
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#parcours-univ{
+  list-style: none;
+}
+
+@media screen and (max-device-width:800px) {
+  html, body{
+    flex-direction: column-reverse;
+    text-align: center;
+    height: auto;
+  }
+
+  .right-panel{
+    width: 100%;
+  }
+
+  .header{
+    font-size: calc(5vh);
+  }
+
+  
+  
+
+  
+
+}
