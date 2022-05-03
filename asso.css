@@ -66,5 +66,10 @@
     .asso-box{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .asso-card{
+        width: 88%;
+        align-self: center;
     }
 }
