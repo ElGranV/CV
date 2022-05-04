@@ -1,0 +1,22 @@
+.profile-box{
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+    
+        
+}
+
+.profile-card{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8%;
+    text-align: justify;
+    margin-left: 10px;
+    padding:15px;
+}
+

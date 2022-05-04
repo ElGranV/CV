@@ -1,7 +1,10 @@
 :root{
-    --title-bg-color: rgb(55,55,65);
-    --left-panel-bg-color:rgb(225,216,207);
+    --title-bg-color: rgb(14,28,54);
+    --light-blue: rgb(175,203,255);
+    --left-panel-bg-color:rgb(255,237,225);
+    --brick-red: rgb(242, 84, 91);
     --blue-toucan:rgba(0, 173, 238, 0.5);
+    --brown:rgb(169, 63, 85);
   }
 
 @font-face {

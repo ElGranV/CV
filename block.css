@@ -1,0 +1,29 @@
+.block{
+    display: block;
+    margin:30px 10px;
+    flex-direction: column;
+    text-align: justify;
+    width: 90%;
+    box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 25%);
+    border-left: 25px solid var(--brick-red);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .block-title{
+    background-color: var(--title-bg-color);
+    color: var(--left-panel-bg-color);
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .block-section-title{
+    font-weight: bold;
+    display: block;
+  
+  }
+  .block-section-subtitle{
+    font-style: italic;
+    display: block;
+  }
+

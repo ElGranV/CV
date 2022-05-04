@@ -9,6 +9,8 @@ html, body{
     /* background-color: #3498db; */
     font-size: 2vh;
     flex-basis: 100%;
+    font-family: Montserrat;
+    font-weight: bold;
     
 }
 
@@ -24,6 +26,7 @@ html, body{
   height:fit-content;
   justify-content: center;
   align-items: center;
+  padding-right: 10px;
 
 }
 
@@ -49,7 +52,7 @@ html, body{
 
 .header{
   flex-grow: 1;
-  background-color: var(--title-bg-color);
+  background: linear-gradient(70deg, darkblue, lightgreen);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -58,14 +61,12 @@ html, body{
   padding: 5%;
   font-size: 28px;
   text-align: center;
+  box-shadow: inset 5px -10px 15px -2px var(--left-panel-bg-color);
+
 }
 
 
-body .header:hover{
-  background: linear-gradient(70deg, darkblue, lightgreen);
 
-  /* transform: gradient; */
-}
 .header:hover ~ .content .card-title{
   background: linear-gradient(70deg, darkblue, lightgreen);
 }
@@ -86,6 +87,22 @@ body .header:hover{
   list-style: none;
 }
 
+.shadow{
+  box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 25%);
+}
+.shadow:hover{
+  box-shadow: 0 0.3em 0.5em rgb(0 0 0 / 32%);
+
+}
+
+.sky-bg{
+  background: linear-gradient(90deg, var(--blue-toucan) 0 5%, white);
+}
+.brown-bg{
+  background: linear-gradient(90deg, var(--brown) 0 5%, white 70%);
+
+}
+
 @media screen and (max-device-width:800px) {
   html, body{
     flex-direction: column-reverse;
@@ -100,10 +117,5 @@ body .header:hover{
   .header{
     font-size: calc(5vh);
   }
-
-  
-  
-
-  
 
 }

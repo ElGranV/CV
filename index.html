@@ -5,9 +5,12 @@
     <meta charset="utf8">
     <meta name="description" content="CV Innovant d'Ethan Rinaldo">
     <link rel="stylesheet" href = "root.css">
+    <link rel="stylesheet" href = "block.css">
+    <link rel="stylesheet" href = "profile.css">
+
     <link rel="stylesheet" href = "card.css">
-    <link rel="stylesheet" href = "asso.css">
     <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
 </head>
 <body>
@@ -16,8 +19,8 @@
                     <img src="ressources/chapeau.jpg" alt="Photo de profil d'Ethan Rinaldo">
                 </div>
                 <div class="soft-skills">
-                        <div class="card">
-                            <div class="card-title">
+                        <div class="block">
+                            <div class="block-title">
                                 CENTRES D'INTERÊT
                             </div>
                             Très polyvalent, j'aime toucher à de nombreux domaines. Je pratique la guitare ainsi que le tennis. 
@@ -26,8 +29,8 @@
                             et je porte une attention toute particulièrement au monde de la cybersécurité. Je m'intéresse également à la pédagogie, 
                             et j'ai mis au point des capsules vidéos pédagogiques en mathématiques et en physique.
                         </div>
-                        <div class="card">
-                            <div class="card-title">
+                        <div class="block">
+                            <div class="block-title">
                                 RECOMPENSES
                             </div>
                             <ul>
@@ -38,8 +41,8 @@
                             </ul>
                             
                         </div>
-                        <div class="card">
-                            <div class="card-title">
+                        <div class="block">
+                            <div class="block-title">
                                 POUR ME CONTACTER
                             </div>
                             E-mails : ethan.rinaldo971@gmail.com, ethan.rinaldo@etu.univ-antilles.fr
@@ -52,46 +55,54 @@
             <div class="right-panel">
                 
                 <div class="header" id="header">
-                    <p>Ethan Rinaldo</p>
-                    Etudiant en Mathématiques <br/>
-                    Elu CFVU
+                    <p>Éthan Rinaldo</p>
+                    Étudiant en Mathématiques <br/>
+                    Élu CFVU
                 </div>
 
                 <div class="content">
-                    <div class="card">
-                        <div class="card-title" id="go">
-                            PARCOURS UNIVERSITAIRE
+                    <div class="box">
+                    <div class="card shadow">
+                        <i class="fa-solid fa-graduation-cap fa-6x"></i>
+                        <div class="card-name">
+                            UA
                         </div>
-                        
-                        <span class="card-section-title">Université des Antilles</span>
-                        <span class="card-section-subtitle">Licence de Mathématiques et de Physique</span>
-                        <ul id="parcours-univ">
-                            <li>
-                                 2019 : Bac S Mention TB (à 15 ans)
-                                 
-                            </li>
-                            <li>2019-2020 : Major de promotion en mathématiques
-                                </li>
-                                <li>2020-2021 : L2 Mathématiques (Major, Mention TB) et simultanément
-                                    L2 Physique (2e de promotion,  Mention TB)
-                                </li>
-                                <li>
-                                    2021-2022: L3 Mathématiques (major de promotion)
-                                </li>
-                        </ul>
-                        <span class="card-section-subtitle">Elu étudiant</span>
-                        Participation au groupe de consultation étudiant relatif au projet 
-                        de bâtiment de vie étudiante et multiservices
+                        <div class="card-description">
+                            Étudiant en <span class="emphasis">L3 Mathématiques</span>
+                            amoureux des sciences et des défis, l'informatique est une de mes passions.
+                            Major de promotion pendant mes trois années de licence, j'ai toujours visé l'excellence
+                            et la polyvalence, mais aussi à aider la communauté universitaire, ce qui m'a mené 
+                            à être élu étudiant. Actuellement je suis vice-président étudiant du pôle Guadeloupe de l'UA.
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="card shadow">
+                        <i class="fa-solid fa-computer fa-6x"></i>
+                        <div class="card-name">
+                            Programmation  
+                        </div>
+                        <div class="card-description">
+                            Autodidacte, j'ai eu mon premier contact avec la programmation à l'âge de 15 ans,
+                            où j'ai appris mon premier langage, le C++.
+                            
+                            
+
+                        </div>
+                    </div>
 
                     </div>
-                    <div class="asso-box">
-                        <div class="asso-card">
+                    
+                    
+                    <div class="box shadow">
+                        <div class="card sky-bg">
                             <img src="ressources/logo-le-park-numerique.png" alt=""/>
-                            <div class="asso-name">
+                            <div class="card-name">
                                 LE PARK NUMERIQUE
                                 <hr/>
                             </div>
-                            <div class="asso-description">
+                            <div class="card-description">
                                 Fédération d'associations en Outre-Mer et en Île de France, travaillant 
                                 à l'inclusion et la médiation numérique au travers notamment de formations aux
                                 nouvelles technologies, d'ateliers de sensibilisation à l'électronique et
@@ -100,14 +111,15 @@
                                 
                             </div>
                         </div>
+                
 
-                        <div class="asso-card">
+                        <div class="card brown-bg">
                             <img src="ressources/logo-wib.png" alt=""/>
-                            <div class="asso-name">
+                            <div class="card-name">
                                 WI-BASH
                                 <hr/>
                             </div>
-                            <div class="asso-description">
+                            <div class="card-description">
                                 Association étudiante d'informatique de l'Université des Antilles, travaillant
                                 à la réalisation de projets innovants liés à la programmation, la robotique, la domotique
                                 et bien d'autres domaines, mais aussi à l'organisation d'événements festifs  liés à
@@ -117,13 +129,13 @@
                             <a href="https://www.atmaryseproject.org/">Voir leur site</a>
                             </div>
                         </div>
-                        <div class="asso-card">
+                        <div class="card">
                             <img src="ressources/logo-maryse.png" alt=""/>
-                            <div class="asso-name">
+                            <div class="card-name">
                                @MaryseProject
                                 <hr/>
                             </div>
-                            <div class="asso-description">
+                            <div class="card-description">
                                 Fondée au service de la communauté, 
                                 Maryse Project a pour but de poser les fondations solides d’une génération tech et réfléchie,
                                 qui voit dans le numérique une opportunité de bâtir un futur plus inclusif, plus responsable, plus éco responsable.
@@ -135,21 +147,21 @@
                         
                     </div>
 
-                    <div class="card">
-                        <div class="card-title">
+                    <div class="block">
+                        <div class="block-title">
                             PARCOURS ASSOCIATIF
                         </div>
-                        <span class="card-section-title">Wi-Bash</span>
-                        <span class="card-section-subtitle">Association d'informatique de l'UA</span>
+                        <span class="block-section-title">Wi-Bash</span>
+                        <span class="block-section-subtitle">Association d'informatique de l'UA</span>
                         - Coorganisation et coordination d'un concours de programmation informatique de grande envergure au sein de l'université : le Codingame
 - Création et publication sur le Play Store d'une application mobile de gestion associative en tant que chef de projet et développeur full stack 
 
-                        <span class="card-section-title">Le Park Numérique</span>
-                        <span class="card-section-subtitle">Association de lutte contre la fracture numérique et l'illectronisme</span>
+                        <span class="block-section-title">Le Park Numérique</span>
+                        <span class="block-section-subtitle">Association de lutte contre la fracture numérique et l'illectronisme</span>
                         - Membre du conseil d'administration du Park, menant des actions visant à lutter contre la fracture numérique et l'illectronisme   
 
-                        <span class="card-section-title">@MaryseProject</span>
-                        <span class="card-section-subtitle">Association d'informatique de l'UA</span>
+                        <span class="block-section-title">@MaryseProject</span>
+                        <span class="block-section-subtitle">Association d'informatique de l'UA</span>
                         - Participation au Gwada Girls Tech Day, événement de promotion du rôle de la femme dans le monde numérique et de sensibilisation des jeunes aux métiers de la tech
                     </div>
 
