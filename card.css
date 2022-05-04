@@ -65,7 +65,7 @@
 }
 
 @media screen and (max-device-width:800px){
-    .card-box{
+    .box{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         justify-items: center;
