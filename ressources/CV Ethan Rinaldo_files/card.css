@@ -92,26 +92,21 @@ font-size: 4em;
 }
 
 @media screen and (max-device-width:800px){
-    .box2-content {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x:auto;
-        justify-content: start;
-        
-      
-      }
+    .box2-content{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
     .box3-content{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         justify-items: center;
     }
-    .box2-content .card{
-        flex: 0 0 auto;
-    margin-right: 3px;
-    width: 85%;
+    .card{
+        width: 88%;
+        align-self: center;
     }
     .box-title{
         font-size: 3em;
     }
 }
-

@@ -31,7 +31,7 @@ html, body{
 }
 
 .image-profile{
-  flex-grow: 0;
+  flex-grow: 1;
 }
 .image-profile img{
   border-radius: 50%;
@@ -99,12 +99,7 @@ html, body{
   background: linear-gradient(90deg, var(--blue-toucan) 0 5%, white);
 }
 .brown-bg{
-  background: linear-gradient(90deg, var(--brown-light) 0 5%, white);
-
-}
-
-.brick-bg{
-  background: linear-gradient(0deg, white , var(--brick-red));
+  background: linear-gradient(90deg, var(--brown) 0 5%, white 70%);
 
 }
 .emphasis{
