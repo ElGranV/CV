@@ -1,16 +1,28 @@
 
 
-  .box{
+  .box2{
       display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr 1fr;
+      -ms-grid-columns: 1fr 1fr;
       
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-content: space-between;
+      grid-template-columns: 1fr 1fr;
+      justify-content:center;
       justify-items: center;
-
-      
+      align-self: center;
+           
   }
+  
+  .box3{
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:center;
+    justify-items: center;
+    align-self: center;
+         
+}
 
 .card{
     display: flex;
