@@ -1,6 +1,11 @@
 
-
-  .box2{
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+  .box2-content{
       display: -ms-grid;
       -ms-grid-columns: 1fr 1fr;
       
@@ -12,7 +17,7 @@
            
   }
   
-  .box3{
+  .box3-content{
     display: -ms-grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     
@@ -23,6 +28,11 @@
     align-self: center;
          
 }
+.box-title{
+text-align: center;
+font-size: 4em;
+}
+
 
 .card{
     display: flex;
@@ -77,7 +87,12 @@
 }
 
 @media screen and (max-device-width:800px){
-    .box{
+    .box2-content{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .box3-content{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         justify-items: center;
@@ -85,5 +100,8 @@
     .card{
         width: 88%;
         align-self: center;
+    }
+    .box-title{
+        font-size: 3em;
     }
 }
