@@ -81,6 +81,16 @@ html, body{
   flex-direction: column;
 }
 
+.video3MeB{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.video3MeB iframe{
+  display: inline;
+}
 
 
 #parcours-univ{

@@ -33,10 +33,12 @@
 .box-title{
 text-align: center;
 font-size: 4em;
+color: var(--brick-red);
+font-family: MontserratSemiBold;
 }
 
 .card i{
-    color: darkblue;
+    color:  var(--brick-red);
 }
 
 .card{
@@ -79,6 +81,7 @@ font-size: 4em;
     margin-bottom: 10px;
     text-align: center;
     width: 100%;
+    color: var(--brick-red);
     
 }
 .card-name hr{
