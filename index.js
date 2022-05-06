@@ -67,11 +67,11 @@ function initCtx(ctx) {
     ctx.lineWidth = 5;
 }
 
-let canva = document.querySelector("canvas");
-canva.style.width = "200px";
-canva.style.height = "200px";
+// let canva = document.querySelector("canvas");
+// canva.style.width = "200px";
+// canva.style.height = "200px";
 
-let ctx = canva.getContext("2d");
-initCtx(ctx);
+// let ctx = canva.getContext("2d");
+// initCtx(ctx);
 
-drawLineWithSteps(ctx, [10, 10], [16, 50], 1);
+// drawLineWithSteps(ctx, [10, 10], [16, 50], 1);
