@@ -61,6 +61,11 @@ font-family: MontserratSemiBold;
     box-shadow: 0 0.3em 0.5em rgb(0 0 0 / 32%);
 
 }
+a.card{
+    text-decoration: none;
+    color: var(--brown-light);
+  }
+
 
 .card img{
     width: 50%;
