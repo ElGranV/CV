@@ -1,77 +1,65 @@
-
-.box{
+.box {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 10px;
     margin-bottom: 30px;
 }
-  
-  .box2-content{
-      display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr;
-      
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content:center;
-      justify-items: center;
-      align-self: center;
-           
-  }
-  
-  .box3-content{
-    display: -ms-grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content:center;
+
+.box-content {
+    display: flex;
+
+    justify-content: center;
     justify-items: center;
     align-self: center;
-         
-}
-.box-title{
-text-align: center;
-font-size: 4em;
-color: var(--brick-red);
-font-family: MontserratSemiBold;
+    padding: 0px 15px;
+    gap: 15px;
 }
 
-.card i{
-    color:  var(--brick-red);
+.box3-content {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+}
+.box-title {
+    text-align: center;
+    font-size: 4em;
+    color: var(--brick-red);
+    font-family: MontserratSemiBold;
 }
 
-.card{
+.card i {
+    color: var(--brick-red);
+}
+
+.card {
     display: flex;
     text-align: justify;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 25%);
-    margin: 10px;
     margin-bottom: 20px;
-    width:90%;
-    border-radius: 5%;
-    padding:10px;
+    /* border-radius: 5%; */
+    width: 100%;
+    padding: 10px;
     font-family: Montserrat;
     font-weight: bold;
-
+    line-height: 1.5em;
 }
-.card:hover{
+.card:hover {
     box-shadow: 0 0.3em 0.5em rgb(0 0 0 / 32%);
-
 }
-a.card{
+a.card {
     text-decoration: none;
     color: var(--brown-light);
-  }
-
-
-.card img{
-    width: 50%;
-    
 }
-.card a{
+
+.card img {
+    width: 50%;
+}
+.card a {
     display: block;
     text-decoration: none;
     /* color: skyblue; */
@@ -79,47 +67,42 @@ a.card{
     text-align: center;
 }
 
-.card-name{
-    font-family: 'Calibri';
+.card-name {
+    font-family: "Calibri";
     font-size: 25px;
 
     margin-bottom: 10px;
     text-align: center;
     width: 100%;
     color: var(--brick-red);
-    
 }
-.card-name hr{
+.card-name hr {
     width: 70%;
+    border: none;
+    background-color: black;
+    opacity: 0.25;
+    height: 0.3px;
 }
 
-
-.card-description{
+.card-description {
     font-weight: bolder;
     padding: 10px;
 }
 
-@media screen and (max-device-width:800px){
-    .box2-content {
+@media screen and (max-device-width: 800px) {
+    .box-content {
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x:auto;
+        overflow-x: auto;
         justify-content: start;
-        
-      
-      }
-    .box3-content{
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        justify-items: center;
+        width: 100%;
     }
-    .box2-content .card{
+
+    .box-content .card {
         flex: 0 0 auto;
-    margin-right: 3px;
-    width: 85%;
+        margin-right: 3px;
+        width: 85%;
     }
-    .box-title{
+    .box-title {
         font-size: 3em;
     }
 }
-

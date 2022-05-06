@@ -1,4 +1,4 @@
-.block{
+.block {
     display: flex;
     flex: 1 1 auto;
     margin-top: 30px;
@@ -8,27 +8,30 @@
     flex-direction: column;
     text-align: justify;
     word-wrap: break-word;
-    
+
     box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 25%);
     border-left: 25px solid var(--brick-red);
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .block-title{
+    padding: 15px;
+    padding-top: 0px;
+    line-height: 1.5em;
+}
+
+.block-title {
     background-color: var(--title-bg-color);
     color: var(--left-panel-bg-color);
     padding: 5px;
     margin-bottom: 10px;
-  }
-  
-  .block-section-title{
+}
+
+.block-section-title {
     font-weight: bold;
     display: flex;
-  
-  }
-  .block-section-subtitle{
+}
+.block-section-subtitle {
     font-style: italic;
     display: flex;
-  }
+}
 
+.block li {
+    padding-left: 12px;
+}
