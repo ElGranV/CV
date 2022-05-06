@@ -5,6 +5,7 @@ html, body{
     justify-content: center;
     align-items: stretch;
     margin: 0%;
+    padding: 0%;
     /* height: 100%; */
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 10%, rgba(0,212,255,1) 100%);; */
     /* background-color: #3498db; */
@@ -79,7 +80,18 @@ html, body{
   flex-grow: 3;
   display: flex;
   flex-direction: column;
+
 }
+
+
+.image-panel img{
+  min-width: 10%;
+  min-height: 10%;
+  margin-left: 10px;
+  max-height: 200px;
+  display: none;
+}
+
 
 .video3MeB{
   display: flex;
@@ -136,6 +148,20 @@ html, body{
 
   .header{
     font-size: calc(5vh);
+    box-shadow: none;
   }
+  .image-panel{
+    display: flex;
+        flex-wrap: nowrap;
+        overflow-x:auto;
+        justify-content: start;
+  }
+  .image-panel div{
+    width: 90%;
+    
+  }
+  
+
+
 
 }

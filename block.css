@@ -1,13 +1,17 @@
 .block{
-    display: block;
-    margin:30px 10px;
+    display: flex;
+    flex: 1 1 auto;
+    margin-top: 30px;
+    margin-right: 3%;
+    margin-left: 5px;
 
     flex-direction: column;
     text-align: justify;
-    width: 90%;
+    word-wrap: break-word;
+    
     box-shadow: 0 0.1em 0.3em rgb(0 0 0 / 25%);
     border-left: 25px solid var(--brick-red);
-    padding-left: 10px;
+    padding-left: 0px;
     padding-right: 10px;
   }
   
@@ -20,11 +24,11 @@
   
   .block-section-title{
     font-weight: bold;
-    display: block;
+    display: flex;
   
   }
   .block-section-subtitle{
     font-style: italic;
-    display: block;
+    display: flex;
   }
 
