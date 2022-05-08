@@ -1,23 +1,27 @@
-:root{
-    --title-bg-color: rgb(14,28,54);
-    --light-blue: #AFCBFF;
-    --left-panel-bg-color:rgb(255,237,225);
+:root {
+    --title-bg-color: rgb(14, 28, 54);
+    --light-blue: #afcbff;
+    --left-panel-bg-color: rgb(255, 237, 225);
     --brick-red: rgb(242, 84, 91);
     --brick-red-light: rgb(242, 84, 91, 0.5);
 
-    --blue-toucan:rgba(0, 173, 238, 0.5);
-    --blue-toucan-strong:rgb(0, 173, 238);
+    --blue-toucan: rgba(0, 173, 238, 0.5);
+    --blue-toucan-strong: rgb(0, 173, 238);
 
-    --brown:rgb(169, 63, 85);
-    --brown-light:rgba(169, 63, 85,0.7);
-
-  }
+    --brown: rgb(169, 63, 85);
+    --brown-light: rgba(169, 63, 85, 0.7);
+}
 
 @font-face {
     font-family: Montserrat;
     src: url(ressources/Montserrat.ttf);
 }
 @font-face {
-  font-family: MontserratSemiBold;
-  src: url(ressources/MontserratSemiBold.ttf);
+    font-family: MontserratSemiBold;
+    src: url(ressources/MontserratSemiBold.ttf);
+}
+
+@font-face {
+    font-family: Witch;
+    src: url(ressources/Witch.ttf);
 }

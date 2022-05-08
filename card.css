@@ -27,6 +27,7 @@
     font-size: 4em;
     color: var(--brick-red);
     font-family: MontserratSemiBold;
+    margin-bottom: 25px;
 }
 
 .card i {

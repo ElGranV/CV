@@ -180,6 +180,9 @@ body {
         text-align: center;
         height: auto;
     }
+    h1 {
+        font-size: 1.5em;
+    }
 
     .right-panel {
         width: 100%;

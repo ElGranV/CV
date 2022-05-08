@@ -1,23 +1,105 @@
 @-webkit-keyframes orbit2 {
-	from { 	-webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-	to   {  -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from {
+        -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
 }
 
 @-moz-keyframes orbit2 {
-	from { 	-moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-	to   {  -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from {
+        -moz-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
 }
 
 @-o-keyframes orbit2 {
-	from { 	-o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-	to   {  -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from {
+        -o-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
 }
 
 @keyframes orbit2 {
-	from { 	transform: rotate(0deg) translateX(150px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+@keyframes wigle {
+    0% {
+        transform: rotate(-7deg);
+    }
+    50% {
+        transform: rotate(7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
-.circle-animation{
+.circle-animation {
     animation: orbit2 4s infinite linear;
+}
+
+.right {
+    left: 90%;
+}
+#magic-hat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.magic-hat {
+    display: flex;
+    /* bottom: 5%;
+    left: 5%; */
+    transition: left 2s ease, bottom 2s ease, opacity 2s ease;
+    width: 50px;
+    opacity: 0;
+
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    padding: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    color: var(--brick-red);
+}
+#magic-hat-text {
+    text-align: center;
+    font-weight: bold;
+    font-family: MontserratSemiBold;
+    color: var(--brick-red);
+}
+
+.game-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+    font-family: Witch, Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: center;
+}
+
+@media screen and (max-width: 800px) {
+    .magic-hat {
+        display: none;
+    }
+    #magic-hat-text {
+        display: none;
+    }
 }
