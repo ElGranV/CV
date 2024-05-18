@@ -1,8 +1,10 @@
+//Code pour afficher la galerie des projets effectués
 let app_images = document.querySelectorAll(".image-panel img");
 for (let i = 0; i < app_images.length; i++) {
     app_images[i].classList.add("shadow");
 }
 
+//Quand on clique sur la galerie elle disparaît
 let image_panel = document.getElementById("image-panel");
 image_panel.addEventListener("click", () => {
     image_panel.style.display = "none";
@@ -12,6 +14,9 @@ let trigger_panel = document.getElementById("trigger-panel");
 trigger_panel.addEventListener("click", () => {
     image_panel.style.display = "flex";
 });
+
+//-----------
+//----------
 
 //Metaclasse qui sert de gestionnaire de positionnement
 class Position {
@@ -79,6 +84,10 @@ const wigle = [
         opacity: 1,
     },
 ];
+
+//-------------
+//-------------
+
 let magic_hat = document.getElementsByClassName("magic-hat")[0];
 magic_hat.left = true;
 magic_hat.times = 0;
@@ -90,12 +99,16 @@ for (let elt of document.getElementsByClassName("game-message")) {
 
 setTimeout(() => {
     magic_hat.addEventListener("mouseover", () => {
-        if (magic_hat.times === 0) {
+        if (magic_hat.times === 0) //position initiale du chapeau après que la souris est passée au-dessus
+        {
+           //Lorsque la souris passe sur le chapeau la première fois le chapeau se téléporte
             document.getElementById("magic-hat-text").style.display = "none";
-            magic_hat.style.left = "5%";
-            magic_hat.style.bottom = "5%";
-
+            magic_hat.style.left = "10%";
+            magic_hat.style.bottom = "2%";
             magic_hat.style.position = "fixed";
+
+            //Ne pas permettre à la vidéo youtube d'être cliquée lors du mini-jeu
+            document.getElementById("youtube-video").style.pointerEvents = "none";
         }
         magic_hat.style.left = magic_hat.left ? "70%" : "5%";
         if (Math.random() > 0.5) magic_hat.style.bottom = "70%";
@@ -109,7 +122,11 @@ setTimeout(() => {
     });
     magic_hat.addEventListener("click", () => {
         magic_hat.style.display = "none";
+        //Affichage du message de félicitations
         document.getElementById("congrats").style.display = "flex";
+        //La vidéo youtube redevient cliquable
+        document.getElementById("youtube-video").style.pointerEvents = "auto";
+
     });
 }, 4000);
 

@@ -97,7 +97,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+#trigger-panel{
+    margin-right: 15px;
+    margin-left: 15px;
+}
 #image-panel {
     position: fixed;
     top: 0;
@@ -140,6 +143,10 @@ body {
 
 .video3MeB iframe {
     display: inline;
+}
+
+#youtube-video-paragraph{
+    padding-top: 5%;
 }
 
 #parcours-univ {
@@ -191,6 +198,10 @@ body {
     .header {
         font-size: calc(5vh);
         box-shadow: none;
+    }
+    #trigger-panel{
+        margin-left: 0;
+        margin-right: 0;
     }
     #image-panel {
         flex-direction: column;
