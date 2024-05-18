@@ -45,6 +45,53 @@
     }
 }
 
+@keyframes hatcolor {
+    0%{
+        color: var(--brick-red);
+    }
+
+    20%{
+        color: var(--brick-red-light)
+    }
+
+    40%{
+        color: var(--brown)
+    }
+
+    60%{
+        color: var(--brown-light)
+    }
+    
+    70%{
+        color: black;
+    }
+
+    80%{
+        color: var(--blue-toucan);
+    }
+
+    100%{
+            color: var(--blue-toucan-strong);
+        
+    }
+
+
+}
+
+/* Animation du gradient*/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 .circle-animation {
     animation: orbit2 4s infinite linear;
 }
@@ -62,7 +109,7 @@
     display: flex;
     /* bottom: 5%;
     left: 5%; */
-    transition: left 1.2s ease, bottom 1.2s ease, opacity 2s ease;
+    transition: left 1.2s ease, bottom 1.2s ease, opacity 2s ease, color 1.2s ease;
     width: 50px;
     opacity: 0;
 

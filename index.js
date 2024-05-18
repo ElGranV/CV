@@ -96,9 +96,10 @@ for (let elt of document.getElementsByClassName("game-message")) {
         elt.style.display = "none";
     });
 }
-
+const hat_colors = [ "rgb(242, 84, 91, 0.5)","rgb(242, 84, 91, 0.5)", "black", "rgba(0, 173, 238, 0.5)", "rgba(169, 63, 85, 0.7)", "darkblue", "lightgreen"]
 setTimeout(() => {
     magic_hat.addEventListener("mouseover", () => {
+        magic_hat.style.color = hat_colors[magic_hat.times%7];
         if (magic_hat.times === 0) //position initiale du chapeau après que la souris est passée au-dessus
         {
            //Lorsque la souris passe sur le chapeau la première fois le chapeau se téléporte
@@ -115,9 +116,19 @@ setTimeout(() => {
         else magic_hat.style.bottom = "5%";
         magic_hat.left = !magic_hat.left;
         magic_hat.times++;
+
+        if (magic_hat.times%5 === 0){
+            magic_hat.animate(wigle, {
+                duration: 30,
+                iterations: 40,
+            })
+        }
+
         if (magic_hat.times > 20) {
             magic_hat.style.display = "none";
             document.getElementById("failed").style.display = "flex";
+            //La vidéo youtube redevient cliquable
+        document.getElementById("youtube-video").style.pointerEvents = "auto";
         }
     });
     magic_hat.addEventListener("click", () => {
