@@ -195,6 +195,9 @@ ul{
     font-family: MontserratSemiBold;
     font-weight: bold;
 }
+.block-section-title{
+    padding-top: 10px;
+}
 
 
 @media screen and (max-device-width: 800px) {
