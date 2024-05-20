@@ -44,9 +44,13 @@ ul{
     justify-content: center;
     align-items: center;
 }
+.left-panel div:last-of-type{
+    margin-top: auto;
+}
 
 .image-profile {
     flex-grow: 0;
+    text-align: center;
 }
 .image-profile img {
     border-radius: 50%;
@@ -56,6 +60,11 @@ ul{
 
 .soft-skills {
     flex-grow: 3;
+}
+#rencontre{
+    margin-top: 10px;
+    display: block;
+    flex-wrap: wrap;
 }
 
 .right-panel {
@@ -187,6 +196,7 @@ ul{
     font-weight: bold;
 }
 
+
 @media screen and (max-device-width: 800px) {
     html,
     body {
@@ -200,6 +210,10 @@ ul{
 
     .right-panel {
         width: 100%;
+    }
+    .left-panel{
+        background-color: white;
+        text-align: center;
     }
 
     .header {
@@ -216,6 +230,9 @@ ul{
     }
     #image-panel div {
         width: 90%;
+    }
+    #magic-hat-container{
+        display: none;
     }
 }
 
