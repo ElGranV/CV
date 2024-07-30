@@ -168,8 +168,8 @@ function shareInfo()
 
 document.getElementById("header").addEventListener("click", ()=>{
     console.log("Header clicked");
-    shareInfo();
     document.getElementById("header").style.backgroundColor = "red"
+    shareInfo();
 })
 
 document.addEventListener("scroll", toggleMagicHat);
