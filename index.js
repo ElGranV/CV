@@ -161,6 +161,11 @@ function toggleMagicHat(event) {
     }
 }
 
+function shareInfo()
+{
+    navigator.share({title:"Test", text:"The Wire is best of all time"})
+}
+
 document.addEventListener("scroll", toggleMagicHat);
 
 //  *
